@@ -1,6 +1,50 @@
 # splitter_frontend
 Ejercicio de División en Segmentos de Archivos Varios (Frontend)
 
+1.- Instalar Node.js y npm:
+
+sudo apt install nodejs npm
+node -v
+npm -v
+
+2.- Crear un proyecto React con Vite:
+
+npm create vite@latest file-split-frontend --template react
+
+3.- Acceder al proyecto:
+
+cd file-split-frontend
+
+4.- Instalar Dependencias:
+
+npm install
+npm install @shadcn/ui tailwindcss postcss autoprefixer
+
+5.- Ejecutar el Frontend:
+
+npm run dev
+
+6.- Accede en el navegador a: http://localhost:5173/.
+
+7.- Estructura del proyecto:
+
+file-split-frontend/
+│── node_modules/
+│── public/
+│── src/
+│   ├── components/
+│   │   ├── FileSplitter.jsx   <-- 📌 Aquí va la interfaz principal
+│   │   ├── FileUpload.jsx     <-- (Opcional) Si quieres separar la lógica de carga de archivos
+│   │   ├── FileList.jsx       <-- (Opcional) Para mostrar los archivos divididos
+│   ├── App.jsx                <-- Componente principal
+│   ├── main.jsx               <-- Punto de entrada
+│   ├── index.css              <-- Estilos globales
+│── package.json
+│── vite.config.js
+│── README.md
+
+8.- Notas de React y Vite:
+
 # React + TypeScript + Vite
 
 Esta plantilla proporciona una configuración mínima para que React funcione en Vite con HMR y algunas reglas de ESLint.
